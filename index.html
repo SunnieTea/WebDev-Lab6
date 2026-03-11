@@ -6,9 +6,27 @@
     <title>Form</title>
 </head>
 <body>
-    <form>
-        <label>Siena College Email:</label>
-        <input type="email" name="email" id="email">
+    <!-- The title attribute has the text that pops up when the pattern is not correct -->
+    <form id="sienaForm">
+        <label for="email">Siena College Email:</label>
+        <input type="email" name="email" id="email" 
+               placeholder="Enter your Siena email" 
+               pattern=".+@siena\.edu" 
+               title="Please enter a valid Siena College email ending with @siena.edu"
+               required
+        >
+
+        <label for="sienaID">Siena ID:</label>
+        <input type="text" name="sienaID" id="sienaID"
+               placeholder="Enter your Siena ID" 
+               pattern="9\d{8}" 
+               title="Siena ID must be 9 digits starting with 9"
+               required
+        >
+
+        <button type="submit">Submit</button>
     </form>
 </body>
+
+<script src="script.js" defer></script>
 </html>
