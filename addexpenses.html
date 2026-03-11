@@ -6,6 +6,23 @@
     <title>Add Expenses</title>
 </head>
 <body>
-    
+    <form>
+        <label for="placeOfExpense">Place of Expence:</label>
+        <input type="text" name="placeOfExpense" id="placeOfExpense" minlength="3" required><br>
+
+        <label for="expenceDate">Expence Date:</label>
+        <input type="date" name="expenceDate" id="expenceDate"><br>
+
+        <label for="amount">Expence Amount:</label>
+        <input type="number" name="amount" id="amount" step="0.01" min="0.01"><br>
+
+        <button type="submit">Submit</button>
+    </form>
 </body>
+
+<script>
+    const d = new Date();
+    const dFormat = d.getFullYear();
+    document.getElementById("expenceDate").setAttribute(max, dFormat);
+</script>
 </html>
