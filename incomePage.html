@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Page</title>
+</head>
+
+<body>
+    <h1>Add Income</h1>
+    <form>
+        <label for="incomeSource">Income Source Name:</label>
+        <input type="text" name="incomeSource" id="incomeSource" minlength="3" required><br>
+
+        <label for="amount">Amount:</label>
+        <input type="text" name="amount" id="amount" required><br>
+
+        <label for="frequency">Frequency:</label>
+        <select name="frequency" id="frequency">
+            <option value="Monthly">Monthly</option>
+            <option value="Weekly">Weekly</option>
+            <option value="Yearly">Yearly</option>
+        </select><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
